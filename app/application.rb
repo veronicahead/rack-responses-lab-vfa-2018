@@ -4,5 +4,7 @@ class Application
     resp = Rack::Response.new
     time = Time.now
     hour = time.hour
+    if hour <= 12
+      resp.write
   end
 end
